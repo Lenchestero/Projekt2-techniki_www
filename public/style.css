@@ -1,0 +1,215 @@
+
+* {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 5px;
+    padding: 0;
+    background-color: #aed4ad;
+    color: #333;
+}
+nav {
+    
+    background-color: #ffffff;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    float: right;
+   padding: 10px;
+   border-style: double;
+    border-radius:5px;
+    border-color:#2c4d36;
+    margin-bottom:50px;
+}
+nav a {
+    color: #000000;
+    width: 25%;
+    float: left;
+    text-decoration: underline;
+    font-size:xx-large;
+    transition: 0.5s;
+    
+}
+
+nav a:hover{
+    color:rgb(255, 255, 255);
+    background-color: #a8bba7;
+    border-radius:5px;
+}
+
+nav a.active{
+    color:rgb(255, 255, 255);
+    background-color: #9b9b9b;
+    border-radius:5px;
+}
+
+h1{
+    color:#000000;
+    font-size:50px;
+    margin:0px;
+    float:left;    
+}
+.tekst{
+    border-style: double;
+    border-radius:5px;
+    border-color:#2c4d36;
+    background-color: #ffffff;
+    width:70%;
+    color:#1e581c;
+    font-size:25px;
+    margin:10px 15%;
+    float:left;
+    padding:20px;
+    margin-bottom:70px;
+    clear: both;
+}
+.tekst2{
+    border-style: double;
+    border-radius:5px;
+    border-color:#2c4d36;
+    background-color: #ffffff;
+    width:20%;
+    color:#1e581c;
+    margin:5px 2%;
+    font-size:25px;
+    float:left;
+    padding:20px;
+
+    translate: 0 -17%;
+}
+.tekst_1 {
+    margin-left: 16%;
+}
+
+
+footer {
+    border-style: double;
+    border-radius:5px;
+    border-color:#2c4d36;
+    background-color: #ffffff;
+    width:100%;
+    color:#1e581c;
+    font-size:15px;
+    float:right;
+    padding:10px;
+    clear: both;
+}
+.bez_kropek {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.pokaz-slajdow{
+    position:relative;
+    overflow:hidden;
+    padding:20px;
+    
+}
+ul{
+    padding:10px;
+}
+
+a.linki:link, a.linki:visited{
+    text-decoration: none;
+    color:#2c4d36;
+}
+
+a.linki:hover{
+    color:rgb(255, 255, 255);
+    background-color: #a8bba7;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.pojemnik_na_zdjecia{
+    padding: 0;
+    width: 100%;
+    
+    
+}
+
+ #zdjecie_specyfikacje{
+    width:50%;
+    margin: 0;
+    border-style: double;
+    border-color: #ffffff;
+    float: left;
+    
+ }
+.dinozaury {
+    margin: 0 10%;
+    width: 80%;
+    height: 0;
+    clear: both;
+}
+ .dinozaury_specyfikacje{
+    width:calc(50% - 20px);
+    background-color: #ffffff;
+    border-style: double;
+    float: left;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+ }
+ .dinozaury_specyfikacje img{
+    width:100%;
+    padding:5px;
+    
+ }
+
+ .nastepny, .poprzedni{
+    border-style: double;
+    height: 8%;
+    width: 10%;
+    justify-content: center;
+    align-items:center;
+    cursor:pointer;
+    z-index:9;
+    float: left;
+    translate: 0 -50%;
+    
+ }
+.nastepny {
+    margin: 21% 10% 21% 5%;
+    
+}
+.poprzedni {
+    margin: 21% 5% 21% 10%;
+}
+
+ 
+ .nastepny:hover img, .poprzedni:hover img{
+    opacity: 0.5;
+ }
+
+ h2{
+    text-decoration: underline;
+ }
+  /*<img src="zdjecia/velociraptorin.png" alt="velociraptor" class="zdjecie_specyfikacje">*/
+
+  .schowane{
+    opacity:0;
+    transform:translateY(20px);
+    visibility: visible;
+    animation:wjechanie 2s forwards;
+  }
+
+  .ruch{
+    opacity:0;
+  }
+
+  @keyframes wjechanie{
+    0%{
+        opacity:0;
+        transform:translateX(-200px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateX(5px);
+    }
+  }

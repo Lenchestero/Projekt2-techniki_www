@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinostrona</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="java_script/script.js"></script>
+    
+</head>
+
+<body>
+
+
+        <nav class="do_podstron">
+            <ul class="bez_kropek">
+                <li><a class="active" href="index.html">Strona główna</a></li>
+                <li><a href="trias.html">Trias</a></li>
+                <li><a href="jura.html">Jura</a></li>
+                <li><a href="kreda.html">Kreda</a></li>
+            </ul>
+        </nav>
+        <div class="wstep">
+        
+            <div class="tekst">
+            <h1>Witaj!</h1><p><br><br>
+             Czy kiedykolwiek zastanawiałeś się, jak wyglądał świat miliony lat temu? Czy chciałeś poczuć dreszcz emocji, odkrywając tajemnice pradawnych stworzeń, które kiedyś panowały na ziemi? Jeśli tak, to trafiłeś we właściwe miejsce! 
+             Zapraszamy Cię do fascynującej podróży przez epoki geologiczne, w których dinozaury królowały na naszej planecie. Od początków Triasu, przez okres panowania potężnych gigantów w Jurze, aż po dramatyczne wydarzenia kończące Kredę - każda era kryje w sobie niezwykłe historie i niezwykłe stworzenia.
+             Przygotuj się na niezapomnianą podróż przez czas i przestrzeń. Rozpocznij przygodę już teraz, klikając na wybrany okres geologiczny i odkrywając fascynujący świat dinozaurów!  </p>
+            </div>  
+        </div>
+        <div class="wyszukiwarka">
+            <div class="tekst_1">
+                <a href="/wyszukiwarka" class="button">Przejdź do wyszukiwarki dinozaurów</a>
+
+                </button>
+            </div>
+        </div>
+        <section class="pokaz-slajdow">
+            
+            
+            <div class="pojemnik_na_zdjecia">
+                <button class="poprzedni" onclick="podmienianie_poprzednie()"><img src="zdjecia/prev.png" alt="prev"> </button>
+                <img src="zdjecia/stegazourin.png" alt="dinozaur" id="zdjecie_specyfikacje">
+                <button class="nastepny" onclick="podmienianie_kolejne()"><img src="zdjecia/next.png" alt="next"> </button>
+            </div>
+            
+        </section>
+       
+        <div class="polecajka">
+            <div class="tekst2 tekst_1">
+                <h2>Polecane gry z dinozaurami:</h2><br><br>
+                <ul>
+                    <li><a class="linki" href="https://store.steampowered.com/search/?term=Ark">Seria Ark,</a></li>
+                    <li><a class="linki" href="https://store.steampowered.com/app/648350/Jurassic_World_Evolution/">Jurrasic World Evolution,</a></li>
+                    <li><a class="linki" href="https://store.steampowered.com/app/1244460/Jurassic_World_Evolution_2/">Jurrasic World Evolution 2,</a></li>
+                    <li><a class="linki" href="https://play.google.com/store/apps/details?id=com.ludia.jurassicworld&hl=en_US&pli=1">Jurrasic World The Game,</a></li>
+                    <li><a class="linki" href="https://store.steampowered.com/app/1202200/Paleo_Pines/">Paleo Pines,</a></li>
+                    <li><a class="linki" href="https://store.steampowered.com/app/666150/Prehistoric_Kingdom/">Prehistoric Kingdom,</a></li>
+                    <li><a class="linki" href="https://store.steampowered.com/app/376210/The_Isle/">The Isle,</a></li>
+                </ul>
+            </div>
+            <div class="tekst2">
+                <h2>Polecani youtuberzy:</h2><br><br>
+                <ul>
+                    <li><a class="linki" href="https://www.youtube.com/@BestInSlotGaming">BestInSlot- gameplay'e,</a></li>
+                    <li><a class="linki" href="https://www.youtube.com/@AGamingBeaver">The Gaming Beaver- gameplay'e,</a></li>
+                    <li><a class="linki" href="https://www.youtube.com/@animalogic">Animalogic- naukowe,</a></li>
+                    <li><a class="linki" href="https://www.youtube.com/@TheBudgetMuseum">The Budget Museum- naukowe,</a></li>
+                    <li><a class="linki" href="https://www.youtube.com/@LindsayNikole">Lindsay Nikole- naukowe,</a></li>
+                </ul>
+            </div>
+            <div class="tekst2">
+                <h2>Polecane dokumenty:</h2><br><br>
+                <ul>
+                    <li>Prehistoric Planet(2022)- Apple Tv,</li>
+                    <li>Wędrówki Dinozaurów (2001),</li>
+                    <li>Powrót Dinozaurów (2002),</li>
+                    <li>Park Prehistoryczny (2006),</li>
+                    <li>Królestwo Dinozaurów (2011),</li>
+                    <li>Planeta Dinozaurów (2011),</li>
+                    <li>Wędrówki z Dinozaurami (1999),</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tekst">
+            <h2>Definicje:</h2><br>
+            <ul>
+                <li><b>Teropody</b> to rząd dinozaurów, obejmujący drapieżne gatunki, charakteryzujące się dwunożną postawą, zazwyczaj mniejszymi przednimi kończynami, długimi ogonami oraz zdolnością do polowania na inne zwierzęta.,</li>
+                <li><b>Zauropodomorfy</b> to grupa dinozaurów charakteryzujących się długimi szyjami, długimi ogonami i czworonożną postawą. Obejmuje zarówno ogromne roślinożerne zauropody, jak i mniejsze formy, a są uważane za jedną z dwóch głównych grup dinozaurów gadziomózgowych obok teropodów.</li>
+                <li><b>Tyreofory</b> to grupa dinozaurów, które charakteryzują się obecnością pancerza lub kolców na ciele. Dzieli się ona na dwie główne podgrupy: stegozaury, posiadające grzebienie na grzbiecie, oraz ankylozaury, wyposażone w twardy pancerz. Tyreofory były roślinożerne i zamieszkiwały głównie okresy jurajski i kredowy.</li>
+        </div>
+        <footer>
+            <p class="foot">&copy; 2023 Dinostrona. Wszelkie prawa zastrzeżone.</p>
+        </footer>
+    
+</body>
+<style>
+    * {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 5px;
+    padding: 0;
+    background-color: #aed4ad;
+    color: #333;
+}
+nav {
+    
+    background-color: #ffffff;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    float: right;
+   padding: 10px;
+   border-style: double;
+    border-radius:5px;
+    border-color:#2c4d36;
+    margin-bottom:50px;
+}
+nav a {
+    color: #000000;
+    width: 25%;
+    float: left;
+    text-decoration: underline;
+    font-size:xx-large;
+    transition: 0.5s;
+    
+}
+
+nav a:hover{
+    color:rgb(255, 255, 255);
+    background-color: #a8bba7;
+    border-radius:5px;
+}
+
+nav a.active{
+    color:rgb(255, 255, 255);
+    background-color: #9b9b9b;
+    border-radius:5px;
+}
+
+h1{
+    color:#000000;
+    font-size:50px;
+    margin:0px;
+    float:left;    
+}
+.tekst{
+    border-style: double;
+    border-radius:5px;
+    border-color:#2c4d36;
+    background-color: #ffffff;
+    width:70%;
+    color:#1e581c;
+    font-size:25px;
+    margin:10px 15%;
+    float:left;
+    padding:20px;
+    margin-bottom:70px;
+    clear: both;
+}
+.tekst2{
+    border-style: double;
+    border-radius:5px;
+    border-color:#2c4d36;
+    background-color: #ffffff;
+    width:20%;
+    color:#1e581c;
+    margin:5px 2%;
+    font-size:25px;
+    float:left;
+    padding:20px;
+
+    translate: 0 -17%;
+}
+.tekst_1 {
+    margin-left: 16%;
+}
+
+
+footer {
+    border-style: double;
+    border-radius:5px;
+    border-color:#2c4d36;
+    background-color: #ffffff;
+    width:100%;
+    color:#1e581c;
+    font-size:15px;
+    float:right;
+    padding:10px;
+    clear: both;
+}
+.bez_kropek {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.pokaz-slajdow{
+    position:relative;
+    overflow:hidden;
+    padding:20px;
+    
+}
+ul{
+    padding:10px;
+}
+
+a.linki:link, a.linki:visited{
+    text-decoration: none;
+    color:#2c4d36;
+}
+
+a.linki:hover{
+    color:rgb(255, 255, 255);
+    background-color: #a8bba7;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.pojemnik_na_zdjecia{
+    padding: 0;
+    width: 100%;
+    
+    
+}
+
+ #zdjecie_specyfikacje{
+    width:50%;
+    margin: 0;
+    border-style: double;
+    border-color: #ffffff;
+    float: left;
+    
+ }
+.dinozaury {
+    margin: 0 10%;
+    width: 80%;
+    height: 0;
+    clear: both;
+}
+ .dinozaury_specyfikacje{
+    width:calc(50% - 20px);
+    background-color: #ffffff;
+    border-style: double;
+    float: left;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+ }
+ .dinozaury_specyfikacje img{
+    width:100%;
+    padding:5px;
+    
+ }
+
+ .nastepny, .poprzedni{
+    border-style: double;
+    height: 8%;
+    width: 10%;
+    justify-content: center;
+    align-items:center;
+    cursor:pointer;
+    z-index:9;
+    float: left;
+    translate: 0 -50%;
+    
+ }
+.nastepny {
+    margin: 21% 10% 21% 5%;
+    
+}
+.poprzedni {
+    margin: 21% 5% 21% 10%;
+}
+
+::placeholder {
+  color: rgb(76, 167, 132);
+  opacity: 1; 
+}
+.button{
+    
+    background-color: #ffffff;
+    height: 100%;
+    text-align: center;
+    width: 25%;
+    float: right;
+    padding: 20px;
+    border-style: double;
+    border-radius:5px;
+    border-color:#2c4d36;
+    margin:50px;
+    margin-bottom: 20px;
+    font-size:x-large;
+}
+.button a {
+    color: #000000;
+    width: 25%;
+    float: left;
+    text-decoration: underline;
+    font-size:xx-large;
+    transition: 0.5s;
+    
+}
+
+.button:hover{
+    color:rgb(255, 255, 255);
+    background-color: #a8bba7;
+    border-radius:5px;
+}
+ 
+ .nastepny:hover img, .poprzedni:hover img{
+    opacity: 0.5;
+ }
+
+ h2{
+    text-decoration: underline;
+ }
+  /*<img src="zdjecia/velociraptorin.png" alt="velociraptor" class="zdjecie_specyfikacje">*/
+
+  .schowane{
+    opacity:0;
+    transform:translateY(20px);
+    visibility: visible;
+    animation:wjechanie 2s forwards;
+  }
+
+  .ruch{
+    opacity:0;
+  }
+
+  @keyframes wjechanie{
+    0%{
+        opacity:0;
+        transform:translateX(-200px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateX(5px);
+    }
+  }
+</style>
+</html>
